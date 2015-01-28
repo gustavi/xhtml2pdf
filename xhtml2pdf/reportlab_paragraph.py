@@ -220,7 +220,7 @@ def _putFragLine(cur_x, tx, line):
 
     # Letter spacing
     if xs.style.letterSpacing != 'normal':
-        tx.setCharSpace(int(xs.style.letterSpacing))
+        tx.setCharSpace(int(xs.style.letterSpacing['0']))
 
     ws = getattr(tx, '_wordSpace', 0)
     nSpaces = 0
